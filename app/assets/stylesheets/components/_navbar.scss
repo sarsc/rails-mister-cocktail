@@ -1,10 +1,10 @@
-
 .navbar-lewagon {
   display: flex;
   justify-content: space-between;
   background: white;
   padding: 16px 24px;
   // align-items: center;
+  background-color: $main-color;
 
   h1 {
     font-family: 'Pacifico', cursive;
@@ -19,7 +19,20 @@
   width: 40px;
 }
 
-
+.nav-link {
+  text-decoration: none;
+  color: $main-color;
+  background-color: white;
+  border: 1px solid white;
+  padding: 16px 16px;
+  border-radius: 4px;
+  font-weight: lighter;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  &:hover{
+    opacity: 1;
+  }
+}
 
 
 // .navbar-lewagon .navbar-lewagon-actions .navbar-lewagon-link {
