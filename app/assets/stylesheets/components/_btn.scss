@@ -1,0 +1,31 @@
+.btn-w {
+  color: #white;
+  background: white rgba(0, 0, 0, 0.4);
+  border: 1px solid #4A4A4A;
+  padding: 8px 8px;
+  border-radius: 16px;
+  font-weight: bold;
+  // opacity: 0.6;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+
+}
+
+.btn:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+
+.nav-btn {
+  color: #white;
+  border: 1px solid #white;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  &:hover{
+    opacity: 1;
+  }
+}
