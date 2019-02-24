@@ -9,16 +9,15 @@
       </div>
       <div>
         <h3>Ingredients</h3>
-
-            <div class="cocktail-info">
-        <% @cocktail.doses.each do |dose| %>
-              <p><%= dose.description %> - </p>
-              <p><%= dose.ingredient.name %> - </p>
-              <p>
-                 <%= link_to "delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
-              </p>
-        <% end %>
-            </div>
+        <div class="cocktail-info">
+          <% @cocktail.doses.each do |dose| %>
+                  <p><%= dose.description %> - </p>
+                  <p><%= dose.ingredient.name %> - </p>
+                  <p>
+                    <%= link_to "delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+                  </p>
+          <% end %>
+        </div>
       </div>
   </div>
 
