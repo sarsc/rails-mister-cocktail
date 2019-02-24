@@ -1,13 +1,19 @@
 .btn-w {
-  color: #white;
-  background: white rgba(0, 0, 0, 0.4);
-  border: 1px solid #4A4A4A;
-  padding: 8px 8px;
-  border-radius: 16px;
-  font-weight: bold;
-  // opacity: 0.6;
-  transition: opacity 0.3s ease;
   text-decoration: none;
+  color: $main-color;
+  background: white;
+  border: 1px solid $main-color;
+  padding: 8px 8px;
+  margin: 8px;
+  border-radius: 8px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: $main-color;
+  }
 
 }
 

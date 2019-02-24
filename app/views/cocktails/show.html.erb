@@ -3,21 +3,29 @@
     <h1 ><%= @cocktail.name %></h1>
   </div>
 
-  <div class="cocktail-container">
-    <% @cocktail.doses.each do |dose| %>
-      <div class="">
-        <h3>Ingredients</h3>
-        <div class="">
-          <p><%= dose.ingredient.name %></p>
-          <p><%= dose.description %></p>
-          <%= link_to "Remove ingredient", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
-        </div>
+  <div class="main-cocktail">
+      <div class="cocktail-description">
+        <h3>About</h3>
       </div>
-    <% end %>
+      <div>
+        <h3>Ingredients</h3>
+
+            <div class="cocktail-info">
+        <% @cocktail.doses.each do |dose| %>
+              <p><%= dose.description %> - </p>
+              <p><%= dose.ingredient.name %> - </p>
+              <p>
+                 <%= link_to "delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %>
+              </p>
+        <% end %>
+            </div>
+      </div>
   </div>
 
-  <p><%=link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %></p>
-  <p><%=link_to "Add cocktail", cocktails_path%></p>
+  <div class="btn-container d-flex justify-content-end">
+    <p><%=link_to "Add a new dose", new_cocktail_dose_path(@cocktail), class: "btn-w"%></p>
+    <p><%=link_to "Back to cocktails", cocktails_path, class: "btn-w"%></p>
+  </div>
 
 </div>
 
