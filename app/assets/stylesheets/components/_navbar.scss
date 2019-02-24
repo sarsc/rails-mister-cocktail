@@ -1,7 +1,6 @@
-.navbar-lewagon {
+.navbar{
   display: flex;
   justify-content: space-between;
-  background: white;
   padding: 16px 16px;
   // align-items: center;
   background-color: $main-color;
@@ -12,11 +11,11 @@
   }
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
   width: 40px;
 }
 
@@ -32,6 +31,7 @@
   transition: opacity 0.3s ease;
   &:hover{
     opacity: 1;
+    color: $main-color;
   }
 }
 
