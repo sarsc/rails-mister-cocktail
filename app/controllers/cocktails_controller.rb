@@ -14,7 +14,7 @@ class CocktailsController < ApplicationController
 
   def create
     @cocktail = Cocktail.new(cocktail_params)
-    @cocktail.save ? (redirect_to cocktail_path(@cocktail)) : (render :new)
+    @cocktail.save ? (redirect_to root_path(@cocktail)) : (render :new)
   end
 
   private
