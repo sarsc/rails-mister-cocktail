@@ -7,4 +7,11 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 import 'bootstrap';
-console.log('Hello World from Webpacker')
+console.log('Hello World from Webpacker');
+
+import 'select2/dist/css/select2.css';
+
+import { initSelect2 } from '../components/init_select2';
+
+initSelect2();
+
