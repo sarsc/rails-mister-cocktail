@@ -1,10 +1,7 @@
 .banner {
   background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  // &.banner-img {
-  //   background-image: url("https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1372&q=80")
-  // }
+  // background-position: center;
+  height: 100%;
 }
 
 .banner h1 {
@@ -13,7 +10,6 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 24px;
   font-weight: lighter;
-  font-family: 'Roboto Slab', serif;
 }
 .banner-img {
   background-position: center;
@@ -22,7 +18,6 @@
   height: 200px;
     h1 {
       color: white;
-      font-family: 'Roboto Slab', serif;
     }
  }
 
