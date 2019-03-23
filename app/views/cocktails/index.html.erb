@@ -1,7 +1,7 @@
 <div class="main-container">
   <div class="cocktail-container">
       <% @cocktails.each do |cocktail| %>
-    <div class="cocktail-card">
+    <div data-aos="slide-up" class="cocktail-card">
         <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
          url(<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill unless cocktail.photo.blank? %>)">
           <div class="card-cocktail-infos">
