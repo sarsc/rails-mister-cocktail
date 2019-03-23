@@ -1,14 +1,3 @@
 // Import page-specific CSS files here.
 @import "home";
 
-.cocktail-name {
-  color: white;
-  font-weight: lighter;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-  &:hover {
-   color: white;
-   opacity: 0.8;
-   text-decoration: none;
-  }
-}

@@ -2,11 +2,20 @@
   <div class="cocktail-container">
       <% @cocktails.each do |cocktail| %>
     <div class="cocktail-card">
-        <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1532509279463-999d8e6554e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">
+      <% if cocktail.photo == true %>
+        <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(cl_image_tag cocktail.photo);">
           <div class="card-cocktail-infos">
             <h1><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-name" %></h1>
           </div>
         </div>
+      <% else %>
+        <div class="banner">
+          <div class="card-cocktail-infos">
+            <h1><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail-name" %></h1>
+          </div>
+        </div>
+      <% end %>
+
     </div>
       <% end %>
   </div>
