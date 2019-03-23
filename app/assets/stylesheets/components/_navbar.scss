@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 16px;
-  // align-items: center;
   background-color: $main-color;
 
   h1 {
@@ -25,9 +24,10 @@
   background-color: white;
   border: 1px solid white;
   padding: 16px 16px;
-  border-radius: 4px;
+  margin-right: 20px;
+  border-radius: 6px;
   font-weight: lighter;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: opacity 0.3s ease;
   &:hover{
     opacity: 1;
