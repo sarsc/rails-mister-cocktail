@@ -1,4 +1,4 @@
-class AddIngredientlRefToDoses < ActiveRecord::Migration[5.2]
+class AddIngredientRefToDoses < ActiveRecord::Migration[5.2]
   def change
     add_reference :doses, :ingredient, foreign_key: true
   end
