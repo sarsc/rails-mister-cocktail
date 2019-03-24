@@ -20,10 +20,19 @@
 .ingredient-description {
   display: flex;
   justify-content: space-between;
-  margin-right: 80px;
-  width: 50%;
   a {
     margin: 0;
     padding: 0;
   }
 }
+
+.about, .ingredient {
+  border-bottom: 2px solid $main-color;
+  width: 20%;
+  padding-bottom: 10px;
+}
+
+.ingredient {
+  width: 30%;
+
+ }
