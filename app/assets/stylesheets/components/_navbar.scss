@@ -6,16 +6,15 @@
 
   h1 {
     font-family: 'Pacifico', cursive;
+    font-size: 3rem;
     color: white;
+    padding-left: 20px;
+    padding-top: 10px;
   }
 }
 
 .navbar .navbar-collapse {
   flex-grow: 0;
-}
-
-.navbar .navbar-brand img {
-  width: 40px;
 }
 
 .nav-link {
@@ -35,7 +34,10 @@
   }
 }
 
-
+.logo {
+  display: flex;
+  margin-left: 10px;
+}
 // .navbar-lewagon .navbar-lewagon-actions .navbar-lewagon-link {
 //   margin-left: 24px;
 //   color: #b23939;
