@@ -4,12 +4,6 @@
   </div>
 
   <div class="main-cocktail">
-    <div class="cocktail-description">
-      <div class="about">
-        <h3>About</h3>
-      </div>
-      <p> <%= @cocktail.description %> </p>
-    </div>
     <div class="ingredient-container">
       <div class=" ingredient-description">
         <div class="ingredient">
@@ -34,6 +28,12 @@
           </div>
         <% end %>
       </div>
+    </div>
+    <div class="cocktail-description">
+      <div class="about">
+        <h3>Method</h3>
+      </div>
+      <p> <%= @cocktail.description %> </p>
     </div>
   </div>
 

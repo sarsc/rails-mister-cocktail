@@ -25,6 +25,9 @@
   text-decoration: none;
   border: 1px solid $main-color;
   color: white;
+  &:hover {
+    color:white;
+  }
 }
 
 .icon-btn {
