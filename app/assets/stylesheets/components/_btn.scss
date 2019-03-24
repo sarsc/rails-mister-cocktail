@@ -1,10 +1,9 @@
 .btn-w {
   text-decoration: none;
-  color: $main-color;
-  background: white;
-  border: 1px solid $main-color;
+  color: white;
+  background: $main-color;
+  margin: 40px;
   padding: 8px 8px;
-  margin: 8px;
   border-radius: 8px;
   font-weight: lighter;
   opacity: 0.9;
@@ -12,17 +11,13 @@
   &:hover {
     opacity: 1;
     text-decoration: none;
-    color: $main-color;
   }
-
 }
 
 .btn:hover {
   opacity: 1;
   text-decoration: none;
 }
-
-
 
 .btn-submit {
   background-color: $main-color;
@@ -33,6 +28,20 @@
 
 .icon-btn {
   color: $main-color;
-  padding: 0 8px;
+  padding: 8px 8px;
   font-size: 10px;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.icon-btn-large {
+  margin: 0;
+  color: $main-color;
+  padding: 0 8px;
+  font-size: 24px;
+  margin-left: 50px;
+  &:hover {
+    color: $main-color;
+  }
 }

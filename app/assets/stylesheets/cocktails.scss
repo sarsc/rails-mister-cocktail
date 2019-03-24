@@ -1,3 +1,29 @@
-// Place all the styles related to the Cocktails controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.cocktail-description {
+  width: 50%;
+  margin-left: 80px;
+  p {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
+
+.cocktail {
+   h1 {
+      margin-right: 6px;
+    }
+    p {
+      padding-right: 6px;
+      font-size: 20px;
+    }
+}
+
+.ingredient-description {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 80px;
+  width: 50%;
+  a {
+    margin: 0;
+    padding: 0;
+  }
+}

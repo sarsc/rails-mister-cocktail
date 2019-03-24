@@ -1,4 +1,4 @@
-<div>
+<div class="main-cocktail-container">
   <div class="banner-img" style="background-image: linear-gradient(rgba(226,226,226,0.3), rgba(226,226,226,0.3)), url('<%= cl_image_path @cocktail.photo unless @cocktail.photo.blank? %>')">
     <h1 ><%= @cocktail.name %></h1>
   </div>
@@ -6,23 +6,28 @@
   <div class="main-cocktail">
     <div class="cocktail-description">
       <h3>About</h3>
+      <p> <%= @cocktail.description %> </p>
     </div>
     <div>
-      <h3>Ingredients</h3>
+      <div class=" ingredient-description">
+        <h3>Ingredients</h3>
+        <p>
+          <%=link_to new_cocktail_dose_path(@cocktail), class: "icon-btn-large" do %>
+            <i class="fas fa-plus"></i>
+          <% end %>
+        </p>
+      </div>
       <div class="cocktail-info">
         <% @cocktail.doses.each do |dose| %>
-          <p><%= dose.description %> - </p>
-          <p><%= dose.ingredient.name %></p>
-          <a href="">
-            <%=link_to new_cocktail_dose_path(@cocktail), class: "icon-btn" do %>
-              <i class="fas fa-plus"></i>
-            <% end %>
-          </a>
-          <a href="">
-            <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }, class: "icon-btn" do %>
-              <i class="fas fa-trash-alt"></i>
-            <% end %>
-          </a>
+          <div class="cocktail d-flex">
+            <p><%= dose.description %> - </p>
+            <p><%= dose.ingredient.name %></p>
+            <a href="">
+              <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }, class: "icon-btn" do %>
+                <i class="fas fa-trash-alt"></i>
+              <% end %>
+            </a>
+          </div>
         <% end %>
       </div>
     </div>
