@@ -15,12 +15,8 @@
   <body>
 
     <%= render './layouts/navbar' %>
-    <div class="main-c">
 
     <%= yield %>
-
-    </div>
-
 
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
