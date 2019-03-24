@@ -1,5 +1,5 @@
 <div class="main-cocktail-container">
-  <div class="banner-img" style="background-image: linear-gradient(rgba(226,226,226,0.3), rgba(226,226,226,0.3)), url('<%= cl_image_path @cocktail.photo unless @cocktail.photo.blank? %>')">
+  <div class="banner-img" style="background-image: linear-gradient(rgba(226,226,226,0.3), rgba(226,226,226,0.3)), url('<%= cl_image_path @cocktail.photo, unless @cocktail.photo.blank?%>')">
     <h1 ><%= @cocktail.name %></h1>
   </div>
 
