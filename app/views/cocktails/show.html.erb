@@ -38,6 +38,7 @@
   </div>
 
   <div class="btn-container d-flex justify-content-end">
+   <span> <%= link_to "update cocktail", edit_cocktail_path(@cocktail), class: "btn-w" %> </span>
    <span> <%= link_to "delete cocktail", cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" }, class: "btn-w" %> </span>
   </div>
 
